@@ -33,7 +33,8 @@ router.get('/', authMiddleware, async (req, res) => {
 // POST /api/projects
 router.post('/', authMiddleware, async (req, res) => {
   try {
-    const { title, content, contentType, tone, industry, keywords, seoScore } = req.body;
+    const { title, content, contentType, tone, industry, keywords, seoScore, scheduledDate } = req.body;
+console.log('scheduledDate received:', scheduledDate); 
     if (!title || !content) return res.status(400).json({ error: 'Title and content are required' });
 
     const project = {
@@ -45,7 +46,7 @@ router.post('/', authMiddleware, async (req, res) => {
       tone,
       industry,
       keywords,
-      seo_score: seoScore || 0,
+      scheduled_date: scheduledDate || null,
       created_at: new Date().toISOString(),
       updated_at: new Date().toISOString()
     };

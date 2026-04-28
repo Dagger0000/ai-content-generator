@@ -101,6 +101,7 @@ export default function GeneratorPage() {
   };
 
   const saveProject = async () => {
+    console.log('scheduledDate:', scheduledDate); // ADD THIS
     if (!output) return toast.error('No content to save');
     if (!saveTitle.trim()) return toast.error('Enter a project title');
     setSaving(true);

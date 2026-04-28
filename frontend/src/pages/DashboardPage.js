@@ -201,7 +201,12 @@ export default function DashboardPage() {
                 <div className="project-card-preview">{p.content}</div>
                 <div className="project-card-footer">
                   <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>
-                    {p.created_at ? formatDistanceToNow(new Date(p.created_at), { addSuffix: true }) : ''}
+                    {p.scheduled_date && (
+  <span style={{ marginRight: 8, color: 'var(--accent-cyan)' }}>
+    📅 Scheduled: {new Date(p.scheduled_date).toLocaleDateString()}
+  </span>
+)}
+{p.created_at ? formatDistanceToNow(new Date(p.created_at), { addSuffix: true }) : ''}
                   </span>
                   <div className="project-card-actions" onClick={e => e.stopPropagation()}>
                     <button className="btn btn-secondary btn-sm" onClick={() => copyContent(p.content)}>📋</button>
