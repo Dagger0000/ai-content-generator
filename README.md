@@ -227,4 +227,4 @@ ai-content-generator/
 ---
 
 ## 👤 Author
-Built for Growth Vector AI Engineer Intern assignment.
+Shashank Vashisht — Built for Growth Vector AI Engineer Intern assignment.
