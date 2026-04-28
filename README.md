@@ -68,7 +68,11 @@ An MVP application that enables marketing teams to generate AI-powered content (
 - **User Auth** — Signup, login, JWT session
 
 ---
+## How it works: Trend-Aware Logic
 
+User Prompt + Top 5 Rising Queries from Pytrends + Industry Context = Trend-Aware Output
+
+---
 ## 🛠️ Local Setup
 
 ### Prerequisites
