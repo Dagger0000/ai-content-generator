@@ -3,8 +3,6 @@
 An MVP application that enables marketing teams to generate AI-powered content (blogs, ad copy, captions, emails) using real-time trending topics and market signals.
 
 ## 🔗 Live Demo
-- **Frontend:** [https://your-app.vercel.app](https://your-app.vercel.app)
-- **Backend API:** [https://your-backend.railway.app](https://your-backend.railway.app)
 - **Demo video:** https://www.loom.com/share/9073fc018c6943eda29e5a62ebfc2a72
 
 ---
